@@ -73,11 +73,13 @@ Usamos a pseudo-classe `:link` para identificar os elementos `<a>` que possuem U
 
 ```css
 a:link {
-  color: yellow;
+  color: red;
 }
 ```
 
-No exemplo acima, apenas o segundo <a> receberá a cor amarela pois ele possui um valor atribuido ao atributo `href`.
+![alt text](example-1.png)
+
+No exemplo acima, apenas o segundo <a> receberá a cor red pois ele possui um valor atribuido ao atributo `href`.
 
 ## Outros elementos
 As pseudo-classes podem ser usadas em outros elementos do HTML, tal como `<div>`, `<span>`, `<ul>`, etc.
@@ -118,3 +120,11 @@ label:after {
 }
 ```
 
+**Resultado**
+
+![alt text](example-2.png)
+
+O exemplo acima adiciona o asterisco ao lado da label, podemos ainda adicionar um seletor
+
+### Regras gerais:
+O `:before` e o `:after` só funcionam se possuirem o atribuito `content`, caso contrário, ele não será renderizado.
